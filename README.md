@@ -9,7 +9,7 @@ Büyük bir yazılım konferansı planlıyorsunuz ve ilk kontrolünüzü geçen 
 * Sunum süreleri dakika cinsindendir veya "lightning" olarak belirtilir (5 dakika. Bkz:https://en.wikipedia.org/wiki/Lightning_talk).
 * Sunumlar arasında mola bulunmamaktadır.
 
-Request
+Request (Kısıtlar validasyon olarak "lightning" yada *min içermeli satır)
 
 {
 "task":"Architecting Your Codebase 60min\nOverdoing it in Python 45min\nFlavors of Concurrency in Java 30min\nRuby Errors from Mismatched Gem Versions 45min\nJUnit 5 - Shaping the Future of Testing on the JVM 45min\nCloud Native Java lightning\nCommunicating Over Distance 60min\nAWS Technical Essentials 45min\nContinuous Delivery 30min\nMonitoring Reactive Applications 30min\nPair Programming vs Noise 45min\nRails Magic 60min\nMicroservices Just Right 60min\nClojure Ate Scala (on my project) 45min\nPerfect Scalability 30min\nApache Spark 30min\nAsync Testing on JVM 60min\nA World Without HackerNews 30min\nUser Interface CSS in Apps 30min"
