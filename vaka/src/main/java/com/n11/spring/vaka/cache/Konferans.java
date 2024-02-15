@@ -5,19 +5,11 @@ import com.n11.spring.vaka.model.Task;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Konferans {
+public class  Konferans {
     private static Konferans instance = null;
-    List<Task> sabahSunumListesi = new ArrayList<>();
-    List<Task> ogleSunumListesi = new ArrayList<>();
     List<Task> tumSunumListesi = new ArrayList<>();
-
-    public void sabahSunumuEkle(Task ts) {
-        sabahSunumListesi.add(ts);
-    }
-
-    public void ogleSunumuEkle(Task ts) {
-        ogleSunumListesi.add(ts);
-    }
+    private StringBuilder trackResult = new StringBuilder();
+    private StringBuilder trackResultTwoDays = new StringBuilder();
     public void tumSunumEkle(Task ts) {
         tumSunumListesi.add(ts);
     }
@@ -28,27 +20,26 @@ public class Konferans {
         return instance;
     }
 
-    public List<Task> getSabahSunumListesi() {
-        return sabahSunumListesi;
-    }
-
-    public void setSabahSunumListesi(List<Task> sabahSunumListesi) {
-        this.sabahSunumListesi = sabahSunumListesi;
-    }
-
-    public List<Task> getOgleSunumListesi() {
-        return ogleSunumListesi;
-    }
-
-    public void setOgleSunumListesi(List<Task> ogleSunumListesi) {
-        this.ogleSunumListesi = ogleSunumListesi;
-    }
-
     public List<Task> getTumSunumListesi() {
         return tumSunumListesi;
     }
-
     public void setTumSunumListesi(List<Task> tumSunumListesi) {
         this.tumSunumListesi = tumSunumListesi;
+    }
+
+    public StringBuilder getTrackResult() {
+        return trackResult;
+    }
+
+    public void setTrackResult(StringBuilder trackResult) {
+        this.trackResult = trackResult;
+    }
+
+    public StringBuilder getTrackResultTwoDays() {
+        return trackResultTwoDays;
+    }
+
+    public void setTrackResultTwoDays(StringBuilder trackResultTwoDays) {
+        this.trackResultTwoDays = trackResultTwoDays;
     }
 }

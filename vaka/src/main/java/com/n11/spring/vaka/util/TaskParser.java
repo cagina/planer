@@ -13,6 +13,7 @@ public class TaskParser {
         String[] splt = s.split("\n");
         Pattern pattern;
         Matcher matcher;
+        Konferans.getInstance().getTumSunumListesi().clear();
         for(String sp: splt) {
             pattern = Pattern.compile(" (.\\d*?)min$");
             matcher = pattern.matcher(sp);

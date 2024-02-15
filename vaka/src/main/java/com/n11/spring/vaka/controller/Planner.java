@@ -17,9 +17,6 @@ public class Planner {
     PlannerService plannerService;
     @PostMapping("uploadTasks")
     public BaseResponseModel uploadTasks(@Valid @RequestBody UploadTasksRequestModel request) {
-        BaseResponseModel res = new BaseResponseModel();
-        plannerService.uploadTask(request);
-        res.setStatus("OK");
-        return res;
+        return plannerService.uploadTask(request);
     }
 }
